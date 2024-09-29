@@ -314,7 +314,7 @@ section {
     font-size: 16px;
 }
 
-/* Second section */
+/* Third section */
 .third-section {
     display: flex;
     flex-direction: column;
@@ -360,7 +360,7 @@ section {
 }
 .third-section .text .input select {
     width: 15%;
-    padding: 10px 15px;
+    padding: 10px 8px;
     font-size: 14px;
     border: none;
     background: none;
@@ -494,7 +494,7 @@ section {
     width: 100%;
 }
 .fourth-section .text .txt2 .search input {
-    width: 75%;
+    width: 70%;
     padding: 10px;
     border-radius: 20px;
     border: 1px solid grey;
@@ -837,7 +837,7 @@ section {
 .eight-section .text h2 {
     font-size: 35px;
     line-height: 35px;
-    width: 25%;
+    width: 27%;
 }
 .eight-section .text .txt {
     display: flex;
