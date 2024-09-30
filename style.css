@@ -19,6 +19,7 @@
 }
 body {
     font-family: monospace;
+    font-weight: bold;
 }
 .fff-btn {
     padding: 10px 25px;
@@ -147,17 +148,38 @@ section {
     border: 1px solid grey;
 }
 .first-section .left .comment {
-    width: 30%;
+    width: 40%;
     margin: 60px 0;
     margin-left: 40%;
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding: 10px 15px;
     box-shadow: 0px 0px 20px rgb(172, 172, 172);
-    border-radius: 20px;
+    border-radius: 15px;
+}
+.first-section .left .comment .imgs {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-section .left .comment .imgs div {
+    width: 35%;
+    border-radius: 100%;
+}
+.first-section .left .comment .imgs div img {
+    width: 100%;
+    border-radius: 100%;
+}
+.first-section .left .comment .imgs div:nth-child(2) {
+    margin-left: -10px;
+}
+.first-section .left .comment .imgs div:nth-child(3) {
+    margin-left: -10px;
 }
 .first-section .left .comment h5 {
     font-size: 16px;
+    line-height: 17px;
 }
 .first-section .left .comment h5 span {
     color: var(--primary-clr);
@@ -238,13 +260,16 @@ section {
     position: absolute;
     z-index: 10;
     display: flex;
-    width: 50%;
+    width: 57%;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 15px;
+    gap: 10px;
+    padding: 8px 10px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgb(121, 119, 119);
     border-radius: 10px;
+}
+.right .comment img {
+    width: 21%;
 }
 .right .comment:nth-child(4) {
     z-index: 22;
@@ -265,8 +290,35 @@ section {
     width: 100%;
 }
 .right .comment .txt p {
-    font-size: 15px;
+    font-size: 95%;
+    color: var(--p-clr);
     position: relative;
+}
+.right .comment .txt p::after {
+    height: 4px;
+    width: 4px;
+    background-color: black;
+    position: absolute;
+    top: 42%;
+    left: 108%;
+    content: '';
+    border-radius: 100%;
+}
+.right .comment .txt p:last-child {
+    color: green;
+}
+.right .comment .txt p:last-child::after {
+    display: none;
+}
+.right .comment .txt p:last-child::before {
+    height: 6px;
+    width: 6px;
+    background-color: green;
+    position: absolute;
+    border-radius: 100%;
+    content: '';
+    top: 37%;
+    left: -12%;
 }
 
 /* Second Section */
@@ -293,7 +345,7 @@ section {
 .text .txt2 {
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 67%;
 }
 .text .txt2 hr {
     height: 9vh;
@@ -303,7 +355,8 @@ section {
     background-color: grey;
 }
 .text .txt2 div {
-    width: 30%;
+    width: 32%;
+    padding: 10px;
 }
 .text .txt2 h5 {
     font-size: 30px;
@@ -414,7 +467,14 @@ section {
 .third-section .div-clc .subdiv .sdiv .first {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 10px 0;
+}
+.third-section .div-clc .subdiv .sdiv .first img {
+    width: 15%;
+    border-radius: 100%;
+    background-color: white;
+    padding: 0;
 }
 .third-section .div-clc .subdiv .sdiv .first h6 {
     font-size: 14px;
@@ -603,6 +663,7 @@ section {
 }
 .fifth-section .sub-div .sdiv p {
     font-size: 16px;
+    font-weight: lighter;
 }
 .fifth-section .sub-div .sdiv button {
     margin-top: 12%;
@@ -722,10 +783,47 @@ section {
 }
 /* Seventh section */
 .seventh-section {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.seventh-section .img {
+    position: relative;
+    width: 23%;
+}
+.seventh-section .img::after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 93%;
+    height: 70%;
+    left: 3.5%;
+    top: 11%;
+    border-radius: 35px;
+    background-color: rgb(192, 192, 250);
+    /* opacity: 0.2; */
+}
+.seventh-section .img::before {
+    position: absolute;
+    content: '';
+    z-index: -2;
+    width: 85%;
+    height: 70%;
+    left: 7.5%;
+    top: 6%;
+    border-radius: 40px;
+    background-color: rgb(236, 236, 253);
+    /* opacity: 0.1; */
+}
+.seventh-section .img img {
+    /* opacity: 0.6; */
+    margin-top: 20%;
+    width: 100%;
+    border-radius: 30px;
 }
 .seventh-section .text {
+    margin-top: 25px;
     width: 70%;
     position: relative;
 }
@@ -737,6 +835,7 @@ section {
 .seventh-section .text .txt header {
     color: var(--p-clr);
     font-size: 18px;
+    line-height: 0;
 }
 .seventh-section .text h2 {
     width: 65%;
@@ -751,9 +850,6 @@ section {
 .seventh-section .text .hero-txt .navi-btn button{
     padding: 1px 15px;
     font-size: 18px;
-}
-.seventh-section .text .subdiv {
-    overflow: hidden;
 }
 .seventh-section .text .subdiv .comment {
     display: none;
@@ -794,6 +890,8 @@ section {
 }
 .seventh-section .text .dot {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 7px;
     position: absolute;
     top: 55%;
@@ -867,7 +965,7 @@ section {
     position: absolute;
     z-index: 10;
     width: 23%;
-    padding: 10px;
+    padding: 10px 15px;
     box-shadow: 0px 0px 10px rgb(214, 214, 214);
     border-radius: 10px;
 }
@@ -889,13 +987,17 @@ section {
 .eight-section .text .comment .txt {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+.eight-section .text .comment .txt img {
+    width: 15%;
+    background-color: white;
+    border-radius: 100%;
 }
 .eight-section .text .comment .txt h4 {
     font-size: 18px;
-    width: 50%;
-    margin-top: -12px;
-    margin-bottom: -15px;
-    padding: 0;
+    width: 60%;
     line-height: 18px;
 }
 /* Footer */
